@@ -17,4 +17,4 @@
 //     }
 //     printf("Sum of Element: %d\n", sum);
 //     return 0;
-// }s
+// }
