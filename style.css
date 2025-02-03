@@ -4,13 +4,14 @@
 }
 
 body {
-    font: 14px;
+    font: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #787395;
 }
 
 h3 {
     margin: 0 0 8px 0;
+    font-size: 1.5rem;
 }
 
 p {
@@ -36,6 +37,7 @@ p {
 
 #sidebar ul li a{
     color: #900;
+    font-size: 1.3rem;
     text-decoration: none;
     padding: 3px 0;
     display: blocks;
@@ -43,5 +45,31 @@ p {
 
 #main-content{
     width: 65%;
+    font-size: 1.3rem;
     float: right;
+}
+
+@media all and (max-width:1000px) {
+    #sidebar ul li a:after{
+        content: "("attr(data-email)")";
+        font-size: 11px;
+        font-style: italic;
+        color: #666;
+        float:inline-start;
+    }
+}
+
+@media all and (max-width:1000px) and (min-width:700px){
+    #sidebar ul li a:before{
+        content: "Email:";
+        font-style: italic;
+        color: darkgreen;
+    }
+}
+
+@media all and (max-width:699px) and (min-width:520px),(min-width:700px){
+    #sidebar ul li a{
+        padding-left: 21px;
+        background: url(email.png) left center no-repeat;
+    }
 }
