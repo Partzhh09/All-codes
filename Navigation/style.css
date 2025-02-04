@@ -1,0 +1,30 @@
+nav {
+    background-color: aqua;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    scale: 10px;
+}
+
+@media screen and (min-width:1000px) {
+    nav a {
+        display: block;
+        color: black;
+    }
+
+}
+#navi{
+    text-align: center;
+    font-size: 30px;
+}
