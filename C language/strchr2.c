@@ -11,6 +11,5 @@ void main()
     else
     {
         printf("character not found");
-    }
-    
+    }   
 }
