@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.op {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.op:hover {
+    background-color: #000;
+    transform: scale(1.1);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+
+.my-img {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    border: 1px solid #000;
+    margin-top: 5px;
+}
+
+.op:hover .my-img {
+    display: block;
+}
