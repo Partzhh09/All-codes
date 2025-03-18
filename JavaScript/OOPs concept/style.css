@@ -2,10 +2,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/d.png);
-    background-repeat: no-repeat;
-    background-position: center; /* Added this line */
-    background-size: 900px;
+    transition: background-color 9s ease-in-out;
     height: 100vh;
     margin: 0;
 }
@@ -13,7 +10,8 @@ body{
 .op {
     text-align: center;
     padding: 10px;
-    border-radius: 5px;
+    font-size: 50px;
+    border-radius: 10px;
     position: relative;
     display: inline-block;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
@@ -34,5 +32,4 @@ body{
     transform: scale(1.1);
     color: #fff;
     cursor: pointer;
-    display: block;
 }
