@@ -81,3 +81,8 @@ class Car{
 }
 const c1 = new Car('Audi','A8','Petrol','Auto',8000000.00,'Black','Audi');
 c1.printDetails();
+
+
+//convert to a number into a string
+
+z
